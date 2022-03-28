@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wys.work.mapper.DelivermanMapper">
+    <update id="updateAll">
+        UPDATE deliverman
+        SET
+            dname =  #{dname,jdbcType=VARCHAR},
+            dphone = #{dphone,jdbcType=VARCHAR},
+            fname = #{fname,jdbcType=VARCHAR}
+        WHERE dno = #{dno,jdbcType=INTEGER}
+    </update>
+
+
+    <select id="getFname" resultType="com.wys.work.entity.Deliverman">
+        SELECT deliverman.* ,Fname
+        FROM deliverman,firm
+        WHERE deliverman.fno = firm.fno
+    </select>
+
+
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wys.work.mapper.BuyMapper">
+
+<!--    <resultMap id="accountUser" type="C">-->
+<!--        <result column="uid" property="uid"></result>-->
+<!--        <result column="account_name" property="accountName"></result>-->
+<!--        <association property="user" javaType="User">-->
+<!--            <result column="user_name" property="userName"></result>-->
+<!--        </association>-->
+<!--    </resultMap>-->
+
+<!--    <select id="findUserByAccountUid" parameterType="int" resultMap="accountUser">-->
+<!--        select u.user_name,a.uid,a.account_name from account a,user u where a.id = #{id} and a.uid=u.id;-->
+<!--    </select>-->
+
+<!--    <select id="getAll" resultType="">-->
+<!--        SELECT * FROM mysql_data ${ew.customSqlSegment}-->
+<!--    </select>-->
+   <!-- <select id="getCname" resultType="com.wys.work.entity.Buy">
+        SELECT buy.* ,cname
+        FROM customer,buy
+        WHERE buy.cno = customer.cno
+
+    </select>-->
+
+</mapper>
